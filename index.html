@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de CPF e CNPJ</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gerador de CPF e CNPJ</h1>
+      <div class="options">
+        <label for="type">Tipo:</label>
+        <select id="type">
+          <option value="cpf">CPF</option>
+          <option value="cnpj">CNPJ</option>
+        </select>
+        <label for="format">Formato:</label>
+        <select id="format">
+          <option value="true">Com Pontuação</option>
+          <option value="false">Sem Pontuação</option>
+        </select>
+        <button onclick="generate()">Gerar</button>
+      </div>
+      <div class="result">
+        <p id="output"></p>
+      </div>
+    </div>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
