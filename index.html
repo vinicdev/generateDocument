@@ -24,8 +24,21 @@
       </div>
       <div class="result">
         <p id="output"></p>
+        <button id="copyButton" onclick="copyToClipboard()">Copiar</button>
+      </div>
+      <div class="validation">
+        <input
+          type="text"
+          id="validateInput"
+          placeholder="Digite CPF ou CNPJ para validar"
+        />
+        <button onclick="validate()">Validar</button>
+        <p id="validationResult"></p>
       </div>
     </div>
+
+    <div id="notification" class="notification"></div>
+
     <script src="src/js/script.js"></script>
   </body>
 </html>
